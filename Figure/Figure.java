@@ -1,6 +1,7 @@
 package Figure;
 
 import Figure.Triangle.*;
+import Figure.Quadrilateral.*;
 
 class Program{
     public static void main(String[] args){
@@ -22,6 +23,20 @@ class Program{
         equilateralTriangle.DisplayInfo();
         RightTriangle rightTriangle = new RightTriangle();
         rightTriangle.DisplayInfo();
+        Quadrilateral quadrilateral = new Quadrilateral();
+        quadrilateral.DisplayInfo();
+        ConvexQuadrilateral convexQuadrilateral = new ConvexQuadrilateral();
+        convexQuadrilateral.DisplayInfo();
+        Parallelogram parallelogram = new Parallelogram();
+        parallelogram.DisplayInfo();
+        Rectangle rectangle = new Rectangle();
+        rectangle.DisplayInfo();
+        Square square = new Square();
+        square.DisplayInfo();
+        Rhombus rhombus = new Rhombus();
+        rhombus.DisplayInfo();
+        Trapeze trapeze = new Trapeze();
+        trapeze.DisplayInfo();
     }
 }
 
@@ -31,6 +46,7 @@ public class Figure{
     }
 
     public void DisplayInfo(){
+        System.out.println();
         System.out.println("Сейчас я выведу список всех фигур, их особенности и определения.");
         System.out.println();
     }
