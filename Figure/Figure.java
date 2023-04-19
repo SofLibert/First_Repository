@@ -1,5 +1,7 @@
 package Figure;
 
+import Figure.Triangle.*;
+
 class Program{
     public static void main(String[] args){
         Figure figure = new Figure();
@@ -12,6 +14,14 @@ class Program{
         oval.DisplayInfo();
         Circle circle = new Circle();
         circle.DisplayInfo();
+        Triangle triangle = new Triangle();
+        triangle.DisplayInfo();
+        IsoscelesTriangle isoscelesTriangle = new IsoscelesTriangle();
+        isoscelesTriangle.DisplayInfo();
+        EquilateralTriangle equilateralTriangle = new EquilateralTriangle();
+        equilateralTriangle.DisplayInfo();
+        RightTriangle rightTriangle = new RightTriangle();
+        rightTriangle.DisplayInfo();
     }
 }
 
@@ -21,7 +31,7 @@ public class Figure{
     }
 
     public void DisplayInfo(){
-        System.out.println("Сейчас я выведу список всех фигур и их особенностей");
+        System.out.println("Сейчас я выведу список всех фигур, их особенности и определения.");
         System.out.println();
     }
 }
